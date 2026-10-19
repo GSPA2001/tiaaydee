@@ -162,15 +162,15 @@ h1 span {
   width: 100%;
   min-height: 490px;
   padding: 16px;
-  background: var(--cream);
+  background-color: #fff8ed !important;
   color: var(--ink);
   border: 1px solid #f4d3c6;
   border-radius: 20px;
   z-index: 1;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(.97);
+  opacity: 1;
+  transform: scale(1);
   transition: transform .8s ease, opacity .5s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .photo-wrap {
@@ -318,12 +318,14 @@ h1 span {
 
 /* ESTADO DE TARJETA ABIERTA */
 
+.card.open .imgBox,
 .card.is-open .imgBox {
   transform: rotateY(-110deg);
   opacity: 0;
   pointer-events: none;
 }
 
+.card.open .details,
 .card.is-open .details {
   opacity: 1;
   pointer-events: auto;
