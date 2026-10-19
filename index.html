@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#681b3b">
+  <title>Para mi tía Aydee ❤️</title>
+   <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/svg+xml">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <canvas id="can" aria-hidden="true"></canvas>
+
+  <main class="scene">
+    <p class="eyebrow">UN REGALO HECHO CON AMOR</p>
+
+    <h1>Para mi querida tía <span>Aydee</span> 🌷</h1>
+    <p class="intro">Preparé algo especial para vos...</p>
+
+    <div class="card" id="card" aria-expanded="false">
+
+      <!-- PORTADA -->
+      <div class="imgBox">
+        <span class="bark"></span>
+        <span class="flower">🌸</span>
+        <span class="cover-small">CON TODO MI CARIÑO</span>
+        <span class="cover-title">¡Tía, hola!</span>
+        <span class="cover-hint">Tocá para abrir tu regalooo ✨</span>
+        <span class="cover-bottom">PARA AYDEE · CON AMOR</span>
+      </div>
+
+      <!-- INTERIOR (ZONA BLANCA) -->
+      <div class="details">
+        <div class="photo-wrap">
+          <img src="tia-aydee.mp4"
+               class="aunt-photo"
+               alt="Fotografía de la tía Aydee">
+          <span class="photo-caption">
+            Una persona muy especial 💗
+          </span>
+        </div>
+
+        <div class="greeting">
+          <span class="color1">¡Feliz Día de la Madre!</span>
+          <span class="heart">♡</span>
+
+          <span>Tía Aydee, te deseo un día</span>
+          <span>lleno de amor, alegría</span>
+          <span>y momentos hermosos.</span>
+
+          <span class="space">Te mando un súper abrazo,</span>
+          <span>de esos que duran mucho.</span>
+
+          <span class="signature">¡Te quiero mucho! 🫰🏻</span>
+        </div>
+
+        <!-- Botón y reproductor DENTRO del interior blanco -->
+        <div class="song-container">
+          <button type="button" id="songBtn" class="song-btn">Una canción 🎶</button>
+          <div id="videoWrapper" class="video-wrapper">
+            <iframe id="youtubePlayer" 
+                    data-src="https://www.youtube.com/embed/q8AuPWZNxpY?enablejsapi=1" 
+                    title="A. Dvořák: Cuando mi vieja madre cantó" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="sender">
+          <img src="yo-xmas.png" alt="Foto de Gise">
+          <span>Con todo mi cariño,<br>
+            <strong>Gise ❤️</strong>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="openButton" class="primary" type="button">
+        Abrir mi regalo 💌
+      </button>
+
+      <button id="resetButton" class="secondary" type="button">
+        Volver al inicio ↺
+      </button>
+    </div>
+
+    <p class="footer">Hecho especialmente para vos, tía Aydee.</p>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
